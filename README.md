@@ -1,6 +1,6 @@
 # Mini-data-guru-Monk
 
-There is two branches:
+There are two branches:
 > front-end 
 > 
 > back-end 
