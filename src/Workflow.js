@@ -20,17 +20,6 @@ const LabelImage = styled.label`
 `;
 
 export default function Workflow() {
-  // const handleChange = (event, newValue) => {
-  //   setTab(newValue);
-  // };
-
-  // const onFileChange = async (e) => {
-  //   const res = await ImgUpAction(state.token, e);
-  //   if (res.success) {
-  //     setImg(res.data);
-  //   }
-  // };
-
   return (
     <div style={{ height: "100%" }}>
       <Typography
@@ -44,9 +33,7 @@ export default function Workflow() {
       >
         Status 1
       </Typography>
-      <form
-      // onSubmit={handleSubmit(onSubmit)}
-      >
+      <form>
         <div
           style={{
             height: "20vh",
@@ -59,11 +46,7 @@ export default function Workflow() {
             <Avatar>
               <PhotoLibraryIcon />
             </Avatar>
-            <input
-              type="file"
-              accept="image/*"
-              // onChange={(e) => onFileChange(e.target.files[0])}
-            />
+            <input type="file" accept="image/*" />
           </LabelImage>
         </div>
       </form>
