@@ -1,13 +1,20 @@
 const express = require('express');
+const cors = require('cors');
+
+const routes = require('./routes.js');
+
 const app = express();
 
-const workflow = require('./routes/workflow.js');
+// Enable All CORS Requests
+app.use(cors());
 
-app.use('/workflow', workflow);
+//load app routes
+app.use('/', routes);
 
+// server listen on port 3000
 const server = app.listen(3000, () => {
-    var host = server.address().address;
-    var port = server.address().port;
+    const host = server.address().address;
+    const port = server.address().port;
 
     console.log(`server listen on ${host}:${port}`);
 });
