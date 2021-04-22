@@ -11,8 +11,8 @@ app.use(cors());
 //load app routes
 app.use('/', routes);
 
-// server listen on port 3000
-const server = app.listen(3000, () => {
+// server listen on port 3001
+const server = app.listen(3001, () => {
     const host = server.address().address;
     const port = server.address().port;
 
